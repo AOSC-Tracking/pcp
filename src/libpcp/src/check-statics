@@ -721,6 +721,7 @@ do
 		    -e 's/b \([_a-zA-Z][_a-zA-Z0-9]*\)\.[0-9]*.[0b]$/b \1/' \
 		    -e 's/\([bds] \).*\.\([_a-zA-Z]\)/\1\2/' \
 		    -e 's/s _glib_relative_date\./s /' \
+		    -e '/ B __gnu_lto_slim/d' \
 		    -e '/ s EH_/d' \
 		    -e '/ s str\.[0-9][0-9]*$/d' \
 		    -e '/ b \.bss/d' \
